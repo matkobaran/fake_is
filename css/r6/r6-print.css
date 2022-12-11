@@ -1,0 +1,151 @@
+.hide,
+.print-hide, .print-hide * {
+        display: none !important;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+#header_menu, #sledovane, #is_search, #is_logout, #left_menu,
+#app_menu, #app_header_image, #drobecky, #odkazy-rel, #paticka,
+.is-dropdown-submenu, .reveal, .app_header_motiv_switch,
+#prepinace .show-for-sr {
+	display: none!important;
+}
+
+.is-dropdown-submenu-parent .show-for-small-only {
+	display: none!important;
+}
+.is-dropdown-submenu-parent {
+	list-style-type: none;
+	text-align: right;
+	top: -5px !important;
+	display: block;
+	position: relative;
+}
+.ikony {
+	text-align: right;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* jmeno uzivatele, fakulta a  obdobi je zadouci pri tisku zobrazit */
+
+#sticky_panel, #hlavicka {
+	position: relative;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#hlavicka > *, #sticky_panel > * {
+	margin: 0;
+}
+
+#sticky_panel .ikony > * {
+	display: none !important;
+}
+
+#sticky_panel .ikony > .jmeno {
+	display: block !important;
+	color: black;
+}
+
+#hlavicka {
+	height: 20px !important;
+}
+
+#app_header {
+	font-size: 2rem;
+}
+
+#app_content {
+	min-height: unset !important;
+}
+
+table.mono td {
+	border: 0px !important;
+}	
+
+a {
+	text-decoration: none;
+}
+
+/* Toolkit */
+
+button[type=reset],
+button[type=submit],
+input[type=reset],
+input[type=submit] {
+	display: none !important;
+}
+
+.tk_vice_mene {
+    max-height: inherit !important;
+}
+
+.datepicker-dropdown {
+	display: none !important;
+}
+
+ul.pagination {
+	list-style: none;
+}
+
+ul.pagination > li:not(.current),
+ul.pagination.show-for-small-only {
+	display: none;
+}
+
+fieldset.inputs-cover {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+fieldset.inputs-cover legend {
+	max-width: 100%;
+	margin-bottom: 0.57143rem;
+}
+
+.reveal .close-button {
+	display: none !important;
+}
+
+li.column {
+	margin-bottom: 1em;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ *
+ * ZA TIMTO KOMENTAREM MUZOU BYT POUZE PRAVIDLA TYPU:
+ *
+ * 	.print-show-*
+ *
+ * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ */
+
+/* Viditelne modalni okno se tiskne. */
+.reveal[style*="display: block;"],
+.reveal[style*="display:block;"] {
+	display: block !important;
+}
+
+/* Univerzalni trida pro zobrazeni tagu.
+ * Typ tagu urcuje hodnotu display
+ * (div -> block, span -> inline, ...).
+ *
+ */
+.print-show {
+	display: initial !important;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ *
+ * ZA TIMTO KOMENTAREM UZ NIC NESMI BYT
+ *
+ * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ */

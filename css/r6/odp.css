@@ -1,0 +1,997 @@
+.bgsvetla {
+	background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.motiv-tmavy .bgsvetla {
+	background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.odpo_blink {
+	animation: odpo_blinker 1s linear infinite;
+}
+
+.box-highlight {
+	box-shadow: 0 0 1px 1px var(--barva4);
+}
+
+@keyframes odpo_blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+#content.odpo_is_expanded .row {
+	max-width: unset;
+}
+
+#content.odpo_is_expanded hr {
+	max-width: unset;
+}
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+	#content:not(.odpo_is_expanded) .odpo_expand_toggle {
+		display: none;
+	}
+}
+
+.el_pre_c_line {
+	white-space: pre-line;
+}
+.el_pre_c_line > .el_pre_c_line_bar {
+	border-right: 1px solid var(--text);
+	display: inline-block;
+	line-height: 1.5rem;
+	margin-right: 0.285714rem;
+	padding-right: 0.285714rem;
+	white-space: pre;
+}
+
+/* Levý sloupec */
+
+#odpo_panel_levypruh_container,
+#odpo_panel_levypruh_horni_container,
+#odpo_panel_levypruh_header {
+	background-color: var(--bgbarva-seda1);
+}
+
+#odpo_panel_levypruh_container,
+#odpo_panel_levypruh_header {
+	padding-right: 0;
+	border-right: 1rem solid var(--bg);
+}
+
+#preview_levy_pruh_header,
+.preview_levy_pruh,
+#odpo_panel_levypruh_container,
+#odpo_panel_levypruh_header {
+	max-width: 200px;
+}
+
+#odpo_panel_levypruh_horni_container {
+	margin-bottom: 1rem;
+}
+
+#odpo_header_menu #odpo_panel_levypruh_horni_container {
+	margin: 0
+}
+
+#odpo_panel_levypruh_container,
+#odpo_panel_levypruh_horni_container {
+	padding: 0;
+}
+
+#odpo_panel_levypruh_container .button {
+	padding-left: .3rem;
+	padding-right: .3rem;
+}
+
+.odpo_akce-slozit #odpo_panel_levypruh_container {
+	/* vyska obrazovky + obsah nad prvni otazkou stranky */
+	min-height: calc(100vh + 700px);
+}
+
+.odpo_panel_levypruh {
+	padding-left: 1.07143rem;
+	padding-top: 1.07143rem;
+	padding-right: 1.07143rem;
+}
+.odpo_panel_levypruh.is-stuck {
+	width: 100%;
+}
+
+.odpo_panel_levypruh hr {
+	margin: -0.5rem auto 0.5rem auto;
+}
+.odpo_panel_levypruh .odpo_panel_levypruh_hr_dark {
+	border-color: var(--text);
+}
+.odpo_panel_levypruh .odpo_panel_levypruh_info span {
+	font-size: 0.9rem;
+	display: block;
+}
+.odpo_panel_levypruh .odpo_panel_levypruh_info .odpo_panel_levypruh_info_foto {
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 130px;
+	margin: 0 auto;
+}
+.odpo_panel_levypruh .odpo_panel_levypruh_info .odpo_panel_levypruh_info_foto img {
+	visibility: hidden;
+	max-width: 130px;
+}
+.odpo_panel_levypruh .odpo_panel_levypruh_info span.odpo_panel_levypruh_uco {
+	color: var(--text-nedurazny);
+	font-size: 0.8rem;
+}
+.odpo_panel_levypruh .odpo_panel_levypruh_info span.odpo_panel_levypruh_jmeno {
+	font-weight: 600;
+}
+.odpo_panel_levypruh .odpo_panel_levypruh_tlacitka .button {
+	width: 100%;
+}
+#odpo_panel_levypruh_horni_container .odpo_panel_levypruh .odpo_panel_levypruh_tlacitka {
+	max-width: 25rem;
+}
+#odpo_panel_levypruh_horni_container .odpo_pb_hodn_info,
+#odpo_panel_levypruh_container .odpo_pb_hodn_info {
+	margin-bottom: .5rem;
+	margin-top: .5rem;
+}
+#odpo_panel_levypruh_container .odpo_pb_hodn_info {
+	margin-left: 15%;
+}
+.odpo_panel_levypruh.is-at-top,
+.odpo_panel_levypruh.is-at-bottom {
+	padding-bottom: 1em;
+}
+
+#odpo_sticky_panel {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0 0 8px 0 rgb(198, 198, 198);
+	border-radius: 0 0 .6rem .6rem;
+	border-width: 0;
+	min-height: 30px;
+	padding: 3px;
+}
+
+#odpo_sticky_panel .odpo_sticky_panel_bgr_fog {
+	border-radius: 0 0 .6rem .6rem;
+}
+
+#odpo_sticky_panel .odpo_sticky_vr {
+	margin: 2px 0.5em;
+}
+
+
+.odpo_casomeric .odpo_casomeric_remaining{
+	font-weight: 600;
+}
+
+.odpo_casomeric .odpo_casomeric_min {
+	font-size: 1.3571rem;
+}
+
+.odpo_casomeric .odpo_casomeric_time {
+	font-weight: 700;
+	font-size: 1.7857rem;
+	padding-left: 0.5rem;
+	line-height: 1;
+}
+
+.odpo_casomeric .odpo_casomeric_time.barva3,
+.odpo_casomeric .odpo_casomeric_time.barva4 {
+	font-size: 2rem;
+}
+
+.odpo_casomeric .progress {
+	margin: 0 0 1rem 0;
+}
+
+.odpo_casomeric_sticky > .odpo_casomeric_time.barva4 {
+	filter: brightness(85%);
+}
+
+.odpo_casomeric .progress-meter {
+	padding: 0.2142rem 0;
+	float: right;
+}
+
+#odpo_sticky_panel .odpo_casomeric .odpo_casomeric_time {
+	font-size: 1.7857rem;
+}
+
+.odpo_panel_levypruh_strana {
+	font-weight: 600;
+}
+
+.odpo_panel_levypruh_strana .odpo_panel_levypruh_strana_numbers {
+	line-height: 75%;
+	font-size: 1.7857rem;
+}
+
+.odpo_panel_levypruh_strana .odpo_panel_levypruh_strana_actual {
+	font-weight: 700;
+}
+
+.odpo_panel_levypruh_strana .odpo_panel_levypruh_strana_last {
+	font-weight: 200;
+}
+
+/* ************* */
+/* Pravý sloupec */
+
+.odpo_info_parametry {
+	margin-bottom: 1.5rem;
+}
+
+.odpo_info_parametry > h4 {
+	margin-bottom: 0.2857rem;
+}
+
+/* Rámeček s informacemi o nastavení odp */
+.odpo_info_parametry_obsah {
+	background-color: var(--bgbarva-seda1);
+	border: 1px solid var(--bordersedy);
+	padding: 1.5rem;
+	position: relative;
+}
+
+.odpo_info_parametry_zdroj .odpo_info_parametry_obsah,
+.odpo_info_parametry_novy .odpo_info_parametry_obsah {
+	padding-bottom: calc(1.5em - 1rem);
+}
+
+.odpo_info_parametry_obsah > .rozklikavatko-nadpis {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0.5rem;
+}
+
+.odpo_info_parametry_obsah hr {
+	margin: 1rem auto;
+}
+
+.odpo_info_parametry_obsah .zdurazneni:last-child {
+	margin-bottom: 0;
+}
+
+.odpo_info_parametry_vse .odpo_info_bodovani strong {
+	padding: 0.1em 0.5em;
+	border-left: 1.5em solid black;
+	color: inherit;
+}
+
+@media screen and (max-width: 24.9375em) {
+	.odpo_info_parametry_vse .odpo_info_bodovani strong {
+		padding: 0.1em 0.3em;
+		border-left-width: 1em;
+	}
+}
+
+@media screen and (min-width: 40em) and (max-width: 49.9375em) {
+	.odpo_info_parametry_vse .odpo_info_bodovani strong {
+		padding: 0.1em 0.3em;
+		border-left-width: 1em;
+	}
+}
+
+.odpo_info_parametry_vse .odpo_info_bodovani > .column {
+	margin: 1px auto;
+}
+
+.odpo_info_parametry_vse .odpo_info_parametry_obsah .rozklikavatko-obsah > .row {
+	margin-top: 1em;
+}
+
+.odpo_info_parametry_vse .info_nadpis,
+.odpo_info_parametry_vse .odpo_info_parametry_hlavicka > .row > .column:first-child {
+	max-width: 19em;
+}
+
+@media screen and (max-width: 39.9375em) {
+	.odpo_info_parametry_vse .info_nadpis {
+		margin-bottom: 0.2825rem;
+	}
+}
+
+.odpo_info_parametry_novy .odpo_vertical_line {
+	border-left: 1px solid var(--bordersedy-dark);
+	height: calc(100% - 1rem);
+}
+
+.odpo_filter_pruchody.row > .column:not(:first-child)::before,
+.odpo_info_parametry_vse .info_obsah > .row > .column:not(:last-child)::after {
+	content: "|";
+	display: inline-block;
+	padding: 0 1em;
+}
+
+.odpo_parametry_vnitrni_odkaz {
+	word-wrap: break-word;
+}
+
+.odpo_filter_pruchody {
+	margin-bottom: 0.5rem;
+	margin-top: -0.5rem;
+}
+
+.odpo_info_podminky_vse .isi-zobacek-vlevo,
+.odpo_info_parametry_omezeni .isi-zobacek-vpravo {
+	font-size: 3em;
+	margin-top: -1.3rem;
+	display: inline-block;
+}
+
+.odpo_info_parametry_preview .rozklikavatko-obsah {
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.odpo_info_parametry_zdroj .odpo_info_parametry_obsah .button {
+	margin: 0;
+}
+
+.odpo_content_buttons {
+	margin: 1px 0 0 0;
+}
+
+/* otázky */
+.odpo_otazka_ .odpo_otazka_poradi_ {
+	display: block;
+	float: left;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-left: -2rem;
+	padding-right: 0.3em;
+	text-align: right;
+	width: 5.4rem;
+}
+.odpo_otazka_.unfilled .odpo_otazka_poradi_ {
+	color: var(--barva4);
+}
+.odpo_otazka_ .odpo_otazka_nazev_ {
+	margin-left: 3.7rem;
+	display: block;
+	font-size: 1.8rem;
+	padding-top: 0.2rem;
+	font-weight: 100;
+}
+.odpo_otazka_ .odpo_otazka_telo {
+	margin-left: 3.7rem;
+	padding: 1rem 2px 1.5rem 2px;
+	overflow-x: auto;
+}
+
+.odpo_otazka_ .odpo_otazka_telo .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.odpo_otazka_na_stranku .odpo_otazka_ .odpo_otazka_nazev_,
+.odpo_otazka_na_stranku .odpo_otazka_ .odpo_otazka_telo {
+	margin-left: 0;
+}
+
+.odpo_otazka_na_stranku .odpo_otazka_ .odpo_otazka_poradi_ {
+	display: none;
+}
+
+.odpo_text_options_used {
+	padding: 2rem;
+	border: 1px solid var(--bordersedy-dark);
+}
+
+.odpo_text_option > *:not(:last-child) {
+	display: none;
+}
+
+button.odpo_text_option_selectable,
+.odpo_text_option_background {
+	padding: 1rem;
+	margin: 0.5rem;
+	border: 1px solid var(--bordersedy-dark);
+	border-radius: 0.5rem;
+	background-color: var(--bgbarva-seda3);
+	display: inline-block;
+	line-height: 1em;
+}
+button.odpo_text_option_selectable:hover,
+button.odpo_text_option_selectable:active,
+button.odpo_text_option_selectable:focus,
+button.odpo_text_option_selectable {
+	text-decoration: none;
+	cursor: pointer;
+}
+.odpo_text_option_background * {
+	text-decoration: line-through;
+}
+.odpo_text_with_options:not(.readonly) .odpo_text_options button.odpo_text_option_selectable:hover {
+	background-color: var(--barvaok);
+}
+.odpo_text_with_options:not(.readonly) .odpo_text_options_used button.odpo_text_option_selectable:hover {
+	background-color: var(--barvako);
+	text-decoration: line-through;
+}
+.odpo_text_with_options.readonly button.odpo_text_option_selectable {
+	cursor: default;
+}
+
+/* Prohlídka odpovedi */
+div[class*="odpo_otazka_spravnost_"] {
+	border-left: 3px solid #aaa;
+}
+
+div[class*="odpo_otazka_spravnost_"] {
+	margin-bottom: 0.5rem;
+	padding: 1.5rem 0.5rem;
+	position: relative;
+}
+
+div[class*="odpo_otazka_korekce_top_"] {
+	font-size: 1.2142rem;
+	padding: 0 0.5rem;
+	border-bottom: 3px solid #aaa;
+}
+
+div.odpo_otazka_korekce_top_null,
+div.odpo_otazka_spravnost_null {
+	border-color: #ffa02f;
+	background-color: rgba(255,160,47,0.05);
+}
+
+div.odpo_otazka_korekce_top_nok,
+div.odpo_otazka_spravnost_nok {
+	border-color: #f9461c;
+	background-color: rgba(249,67,97,0.05);
+}
+
+div.odpo_otazka_korekce_top_ok,
+div.odpo_otazka_spravnost_ok {
+	border-color: #00a442;
+	background-color: rgba(0,164,66,0.05);
+}
+
+div.odpo_otazka_korekce_top_partial,
+div.odpo_otazka_spravnost_partial {
+	border-color: #00a1de;
+	background-color: rgba(0,161,222,0.05);
+}
+
+div.odpo_otazka_korekce_top_ignore,
+div.odpo_otazka_spravnost_ignore,
+div.odpo_otazka_ignore {
+	background-color: var(--bgbarva-seda3);
+}
+
+div[class*="odpo_otazka_korekce_top_"] {
+	background-color: transparent;
+}
+
+.pagination .odpo_unfilled_count {
+	background: rgb(249, 165, 0);
+	font-weight: 700;
+	font-size: 10px;
+	padding: 0px 4px;
+	border-radius: 50%;
+	color: var(--barvabila);
+	vertical-align: bottom;
+}
+
+.pagination .odpo_unfilled_count_two_digit {
+	padding: 0px 1px;
+}
+
+.odpo_doplinfo_body {
+	position: absolute;
+	right: 0.5rem;
+	bottom: 1.5rem;
+}
+
+.odpo_doplinfo_ .hodnotit_pozn_blok {
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+#odpo_aplikace {
+	margin-bottom: 1em;
+}
+
+.odpo_aplikace_prohlidka .odpo_otazka_ {
+	margin-top: 0;
+}
+
+.odpo_aplikace_prohlidka .odpo_html_uvod,
+.odpo_aplikace_prohlidka .odpo_html_zaver,
+.odpo_aplikace_prohlidka .odpo_otazka_text_ {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.odpo_otazka_answer_correct:before {
+	content: '(';
+}
+.odpo_otazka_answer_correct:after {
+	content: ')';
+}
+.odpo_otazka_answer_correct:empty {
+	display: none;
+}
+
+/* překrytí Foundation form width=100% */
+.odpo_otazka_telo select, .odpo_otazka_telo input {
+	width: initial;
+	display: initial;
+	margin: 0.15rem;
+}
+.odpo_otazka_telo .input-group select,
+.odpo_otazka_telo .input-group input {
+	margin: 0;
+}
+.odpo_otazka_telo .input-group {
+	margin: 0;
+}
+.odpo_otazka_telo .form-error.is-visible .form-error-text {
+	margin-top: 0;
+}
+.odpo_otazka_telo .odpo_input_group_cover {
+	margin: 0.15rem;
+	display: inline-block;
+}
+.odpo_otazka_telo .validator-group-content {
+	min-height: initial;
+	margin: 0.15rem 0;
+}
+.odpo_otazka_telo label {
+	display: inline-block;
+	margin: 0.15rem 0;
+}
+.odpo_otazka_telo pre {
+	overflow: unset;
+}
+
+
+.odpo_maple_syntax_check {
+	height: auto;
+	width: auto;
+}
+
+.odpo_otazka_telo table:not([class]) tbody,
+.odpo_otazka_telo table:not([class]) thead,
+.odpo_otazka_telo table:not([class]) tbody tr,
+.odpo_otazka_telo table:not([class]) tbody td,
+.odpo_otazka_telo table:not([class]) tbody th {
+	background-color: transparent;
+}
+
+.odpo_blur_cover {
+	position: relative;
+}
+
+.odpo_blur_cover > .odpo_blur {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(0.7em);
+}
+
+.odpo_blur_hide .odpo_blur {
+	display: none !important;
+}
+
+/* zpětná vazba zpetna vazba*/
+.odpo_zpetna_vazba {
+	margin-left: 3.5rem;
+	margin-bottom: 2rem;
+}
+
+/* TODO _formular se zanořuje do sebe, až se vyřeší, tak lze odkomentovat následující pravidlo a to s :not smarat */
+/*.odpo_zpetna_vazba_formular {*/
+:not(.odpo_zpetna_vazba_formular) > .odpo_zpetna_vazba_formular {
+	border: 1px solid var(--barvadoplnkova);
+	padding: 1.7rem 1.7rem .7rem 5rem;
+	background-color: var(--bgbarvadoplnkova-svetla);
+	border-radius: 2.5rem 0 0 2.5rem;
+}
+.odpo_zpetna_vazba i.odpo_zpetna_vazba_ikona {
+	float: left;
+	margin-left: -3.8rem;
+	margin-top: -.3rem;
+	font-size: 2.3rem;
+	color: var(--barvadoplnkova);
+}
+/* TODO smazat až se vyřeší zanořování */
+.odpo_zpetna_vazba .odpo_zpetna_vazba_formular > .odpo_zpetna_vazba_formular i.odpo_zpetna_vazba_ikona {
+	display: none;
+}
+
+/* mezitexty */
+.odpo_html_uvod,
+.odpo_html_zaver,
+.odpo_otazka_text_ {
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-left: 4rem;
+	overflow-x: auto;
+}
+.cover_hide_instructions.hide_instructions .button_hide_instructions,
+.cover_hide_instructions.hide_instructions .odpo_otazka_text_ {
+	display: none;
+}
+.cover_hide_instructions:not(.hide_instructions) .button_show_instructions {
+	display: none;
+}
+
+.seznam-odp-head img {
+	float: left;
+	height: auto;
+	margin-right: 0.5rem;
+	margin-top: -0.2em;
+	width: 2.5rem;
+}
+
+.seznam-odp-body {
+	margin-bottom: 2rem;
+}
+
+.seznam-odp-body table {
+	min-width: 100%;
+}
+
+.seznam-odp-body table tr:hover {
+	background-color: var(--bgbarva-seda2);
+}
+
+.seznam-odp-body table .uzel {
+	font-weight: 600;
+}
+
+.seznam-odp-body table .pozn_blok {
+	font-size: 0.8571rem;
+}
+
+.seznam-odp-body table tr.odp_ok {
+	background-color: var(--barvaok);
+}
+.seznam-odp-body table tr.odp_ok td {
+	background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.motiv-tmavy .seznam-odp-body table tr.odp_ok td {
+	background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.seznam-odp-body table tr.odp_ko.odp_uzavren{
+	background-color: var(--barvako);
+}
+.seznam-odp-body table tr.odp_ko.odp_uzavren td {
+	background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.motiv-tmavy .seznam-odp-body table tr.odp_ko.odp_uzavren td {
+	background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.seznam-odp-body table tr.odp_bez_prav > td.uzel > a,
+.seznam-odp-body table tr.odp_ko.odp_bez_prav > td.uzel > a:visited,
+.seznam-odp-body table tr.odp_uzavren > td.uzel > a,
+.seznam-odp-body table tr.odp_ko.odp_uzavren > td.uzel > a:visited {
+	color: var(--text-nedurazny);
+}
+
+.seznam-odp-body table .hodnoceni {
+	font-weight: 600;
+	color: var(--barvaok);
+}
+
+.seznam-odp-body table td.poznamka {
+	padding-left: 0;
+}
+
+.seznam-odp-body ul {
+	margin-bottom: 0;
+}
+
+.seznam-odp-body .isi-inline {
+	font-size: 150%;
+	vertical-align: -20%;
+}
+
+.button.novy-odp i {
+	font-size: 1.5em;
+	vertical-align: -0.2em;
+}
+
+.odp-pruchody-cover .odp-pruchod-row {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.odp-pruchody-cover .odp-pruchod-row .button {
+	margin-bottom: 2px;
+}
+
+.odp-pruchody-cover .odp-pruchod-row .odp-pruchody-cas {
+	font-size: 0.8571rem;
+	padding-top: 0.4rem;
+	display: inline-block;
+}
+
+.odp-pruchody-cover .odp-pruchod-row .xml_zaznam {
+	font-size: 0.7rem;
+	display: none;
+	padding-top: 0.78em;
+}
+.odp-pruchody-cover .odp-akce .odp-pruchod-row .xml_zaznam {
+	padding-top: 0.3rem;
+}
+.odp-pruchody-cover .odp-pruchod-row:hover .xml_zaznam {
+	display: block;
+}
+
+.odp_date_time{
+	white-space: nowrap;
+}
+
+/* preview */
+
+.preview_otazka_zdroj_rozklikavatko_cover {
+	margin-top: 1.5rem;
+}
+
+.preview_otazka_zdroj_rozklikavatko_cover_vyhodnoceni {
+	margin-top: 3rem;
+}
+
+.preview_otazka_zdroj_rozklikavatko.rozklikavatko-obsah {
+	background-color: var(--bgbarva-seda1);
+	padding: 0.5em;
+	border: 1px dotted var(--bordersedy-dark);
+}
+
+.preview_otazka_zdroj_rozklikavatko.rozklikavatko-obsah .tk_vice_mene > .obsah {
+	overflow-y: auto;
+}
+
+#preview_levy_pruh_header > div,
+#preview_levy_pruh_horni_header > div,
+.preview_levy_pruh > div {
+	background-color: var(--bgbarva-seda1);
+	height: 100%;
+	padding: 0.3rem;
+}
+
+.preview_levy_pruh > div [data-sticky] {
+	width: 100%;
+}
+
+.preview_device {
+	width: 100%;
+	border-width: 10px 35px 10px 45px;
+	border-color: grey;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+.preview_device_mobile {
+	max-width: 640px;
+	height: 360px;
+}
+
+.preview_device_tablet {
+	max-width: 1024px;
+	height: 576px;
+}
+
+/* odpovedi */
+.odpovedi_prepinace {
+	margin-top: 2rem;
+	margin-bottom: -1rem;
+}
+.odpovedi_prepinace_label {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 1rem;
+	margin-right: .8rem;
+	line-height: 1;
+}
+.odpovedi_hidden_container {
+	position: absolute;
+	left: -5000px;
+}
+.odpovedi_idents_cover > ul {
+	margin-left: 0;
+	/* TODO: zde je potřeba dopočítat min-width obsahu, jinak odskakují ikonky klíče na malém displeji */
+}
+.odpovedi_idents_cover > ul > li {
+	border-top: 1px solid var(--bordersedy-dark);
+	min-width: 69.75rem;
+}
+.odpovedi_idents_cover > ul > li ul.odpovedi_fix_pruchod_posledni > li:last-of-type > .odpovedi_wrench_cover,
+.odpovedi_idents_cover > ul > li ul.odpovedi_fix_pruchod_posledni > li:last-of-type ul li:last-of-type > div {
+/*.odpovedi_idents_cover > ul > li ul li:last-of-type .odpovedi_rozklikavatko_vseakce {*/
+	padding-bottom: .85714rem; /* 12px */
+}
+.odpovedi_idents_cover > ul > li ul.odpovedi_fix_pruchod_posledni li:last-of-type .odpovedi_rozklikavatko_vseakce {
+	margin-top: -.85714rem; /* 12px */
+}
+.odpovedi_idents_cover > ul > li:last-of-type {
+	border-bottom: 1px solid var(--bordersedy-dark);
+}
+.odpovedi_idents_cover > ul > li:hover > .odpovedi_wrench_cover {
+	background-color: var(--bgbarva-seda1);
+}
+.odpovedi_idents_cover > ul > li ul .odpovedi_wrench_cover {
+	margin-left: -4.25rem !important;
+	padding-left: 6rem;
+}
+.odpovedi_idents_cover > ul > li ul .odpovedi_rozklikavatko_vseakce .odpovedi_wrench_cover {
+	margin-left: -4rem !important;
+}
+.odpovedi_idents_cover > ul > li ul ul > li > div {
+	margin-left: -6rem !important;
+	padding-left: 8rem;
+}
+.odpovedi_idents_cover ul > li:before {
+	display: none;
+}
+.odpovedi_fix_vsepruch,
+.odpovedi_fix_ident {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.odpovedi_wrench_cover .odpovedi_wrench {
+	opacity: 0.2;
+}
+
+.odpovedi_idents_cover > ul > li ul li:hover .odpovedi_wrench_cover,
+.odpovedi_idents_cover > ul > li ul li:hover ul li > div {
+	background-color: var(--bgbarva-seda1);
+}
+
+.odpovedi_idents_cover > ul > li .odpovedi_rozklikavatko_vseakce ul li:hover .odpovedi_wrench_cover,
+.odpovedi_idents_cover > ul > li .odpovedi_rozklikavatko_vseakce ul li:hover ul li > div {
+	background-color: var(--bgbarva-seda2);
+}
+.odpovedi_wrench_cover.selected {
+	background-color: var(--bgbarva-seda3) !important;
+}
+.odpovedi_idents_cover > ul > li:hover > .odpovedi_wrench_cover .odpovedi_wrench,
+.odpovedi_idents_cover > ul ul > li:hover > .odpovedi_wrench_cover .odpovedi_wrench {
+	opacity: 1;
+}
+
+.odpovedi_wrench_menu_cover {
+	padding: 1rem 0 0 0;
+}
+
+@media screen and (min-width: 345px) {
+	.tooltip.odpovedi-alert {
+		max-width: none;
+	}
+}
+
+.odpovedi_idents_cover li > .row,
+.odpovedi_idents_cover .row.odpovedi_fix_pruchod {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.odpovedi_idents_cover li > .row > .column:first-child,
+.odpovedi_idents_cover .row.odpovedi_fix_akce > .column:first-child,
+.odpovedi_idents_cover .row.odpovedi_fix_pruchod > .column:first-child {
+	padding-left: 0;
+}
+
+.odpovedi_fix_ident {
+	min-width: 70.25rem;
+}
+.odpovedi_fix_pruchod_posledni,
+.odpovedi_rozklikavatko_vsepruch > ul {
+	min-width: 68.5rem;
+}
+ul.odpovedi_fix_pruchod_posledni {
+	margin-left: 1.75rem;
+}
+
+.odpovedi_fix_name {
+	max-width: 44.5rem;
+	min-width: 44.5rem;
+	color: var(--text-nedurazny);
+}
+.odpovedi_fix_old_pruchod {
+	max-width: 15.07143rem;
+	min-width: 15.07143rem;
+	padding-left: 1.07143rem !important;
+}
+
+/*.odpovedi_fix_vsepruch {
+	min-width: 63rem;
+}
+
+.odpovedi_fix_pruchod {
+	min-width: 59rem;
+}*/
+
+.odpovedi_fix_akce {
+	min-width: 61.75rem;
+}
+
+.odpovedi_fix_otevreni {
+	max-width: 23rem;
+	min-width: 23rem;
+}
+
+.odpovedi_fix_provedeni {
+	max-width: 22.5rem;
+	min-width: 22.5rem;
+	color: var(--text-nedurazny);
+}
+
+.odpovedi_fix_typ {
+	max-width: 9.5rem;
+	min-width: 9.5rem;
+	padding-right: .07143rem;
+}
+.odpovedi_fix_pruchod .odpovedi_fix_typ {
+	max-width: 11rem;
+	min-width: 11rem;
+	font-weight: 600;
+}
+.odpovedi_fix_points {
+	max-width: 7rem;
+	min-width: 7rem;
+	text-align: right;
+}
+
+.odpovedi_fix_old_akce, .odpovedi_fix_empty {
+	max-width: 14rem;
+	min-width: 14rem;
+}
+
+.odp_posledni_dulezita_ico {
+	margin-left: calc(-.3em - 16.8px);
+	float: left;
+}
+
+.odpovedi_idents_cover {
+	overflow-x: auto;
+}
+
+.odpovedi_b_to_c_group_validator label {
+	min-height: 0;
+	margin-bottom: 0;
+}
+
+.odpovedi_modal_export_tab_panel .row.fieldset.export { /* Odpovědi modal export */
+	margin: 1.28571rem 0;
+}
+.modal_seznam_neukoncenych_box { /* Odpovědi modal ukončit neukončené průchody */
+	padding: 1rem 0 .5rem 0;
+	margin-bottom: 2rem;
+}
+.modal_seznam_neukoncenych_box .odpovedi_b_to_c_group_validator {
+	margin-bottom: 0;
+}
+.modal_seznam_neukoncenych_box li::before {
+	display: none !important;
+}
+/* duplicity */
+.odpo_dupl_question_selected {
+	background-color: rgba(0,164,66,0.05);
+}
+.motiv-tmavy .odpo_dupl_question_selected {
+	background-color: rgba(0,164,66,0.2);
+}
+
+.odpo_edit_solution_form_inputs_cover .html-editor .se-content {
+	min-height: 12rem;
+}
+
+.hide_empty:empty {
+	display: none !important;
+}
